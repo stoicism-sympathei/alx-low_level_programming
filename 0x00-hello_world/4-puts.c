@@ -1,3 +1,7 @@
+/*
+ * File: 4-puts.c
+ * Auth: Julien Barbier 
+ */
 #include <stdio.h>
 
 /**
