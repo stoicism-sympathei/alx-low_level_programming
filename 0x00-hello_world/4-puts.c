@@ -1,14 +1,9 @@
-/*
- * File: 4-puts.c
- * Auth: Julien Barbier 
- */
-#include <stdio.h>
 
+#include <stdio.h>
 /**
- * main - Prints "Programming is like building a multilingual
- *                puzzle, fllowed by a new line.
+ * main - Entry point
  *
- * Reoturn: Always 0.
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
