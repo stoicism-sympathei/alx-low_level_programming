@@ -4,10 +4,13 @@
 #include "main.h"
 
 /**
- * print alphabet - prints lowercase alphabet
+ * main - check the code
+ *
+ * Return: Always 0.
  */
-void print_alphabet(void)
-{
+int main(void)
+{    print_alphabet();
+
     int j;
    
 
@@ -16,8 +19,4 @@ void print_alphabet(void)
        _putchar(j);
     }
        _putchar('\n');
-}  int main(void)
-{
-    print_alphabet();
-    return (0);
-}
+} 
