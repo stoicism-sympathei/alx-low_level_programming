@@ -12,7 +12,7 @@
  * Return: always 0 (Success)
  */
 
-int	main(void)
+int main(void)
 {
 	unsigned long n_minus1 = 2, n_minus2 = 1, n = 0;
 	unsigned long n_m1h1, n_m1h2, n_m2h1, n_m2h2, n_h1, n_h2;
