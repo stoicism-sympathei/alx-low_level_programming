@@ -19,7 +19,7 @@ int main(void)
 	int i = 0;
 
 	printf("%lu, %lu", n_minus2, n_minus1);
-	wile (i < 90) /* 9 - 2 because I hardcoh2de the first 2 values */
+	while (i < 90) /* 9 - 2 because I hardcoh2de the first 2 values */
 	{
 		n = n_minus1 + n_minus2;
 		n_minus2 = n_minus1;
