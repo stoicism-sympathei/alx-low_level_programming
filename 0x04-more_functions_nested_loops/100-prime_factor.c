@@ -10,21 +10,22 @@ int main(void)
 {
 	long prime = 612852475143, div;
 
-	while (div < (prime % 2) == 0)
+	while (div < (prime / 2))
 	{
-	  if ((prime % 2) == 0)
-	  {
-		prime /= 2;
-		continue;
+		if ((prime % 2) == 0)
+		{
+			prime /= 2;
+			continue;
+		}
+
+		for (div = 3; div < (prime / 2); div += 2)
+		{
+			if ((prime % div) == 0)
+				prime /= div;
+		}
 	}
 
-	for (div = 3; div < (prime / 2); div += 2)
-	{
-		if ((prime % div) == 0)
-			prime /= div;
-	}
-}
-printf("%1d\n", prime);
+	printf("%ld\n", prime);
 
-return (0);
+	return (0);
 }
