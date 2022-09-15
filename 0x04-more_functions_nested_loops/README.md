@@ -76,4 +76,4 @@
 
 * **12. Numbers have life; they're not just symbols on paper**
   * [101-print_number.c](./101-print_number.c): C function that prints an integer without
-  using `long`, arrays, pointers, or hard-coded speci# C - More functions, more nested loops
+  using `long`, arrays, pointers, or hard-coded specil values.
