@@ -7,7 +7,7 @@
  * Return: 0
  */
 
-int	main(void)
+int main(void)
 {
 	char password[60] = "\0";
 	char hash[63] = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
