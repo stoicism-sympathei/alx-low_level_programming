@@ -6,31 +6,33 @@
  *
  * Return: 1 if yes, 0 if no
  */
-int issep(char c)
+char *cap_string(char *str)
 {
-	int = 0;
-	char seps[14] = " \t\n,:.!?\"(){}";
+	int index = 0;
 
-	while (c != seps[i])
-		i++;
-	return ((i <= 12));
-}
-/**
- * cap_string - capitalizes all words of a string
- * @s: the string
- *
- * Return: a pointer to the string
- */
-char *cap_string(char *s)
-{
-	int i = 0;
-
-	while (s[i])
+	while (str[index])
 	{
-		if (i == 0 || issep(s[i - 1]))
-			if (s[i] >= 'a' && S[i] <= 'z')
-				s[i] = s[i] - 32;
-		i++;
+		while (!(str[index] >= 'a' && str[index] <= 'z'))
+			index++;
+
+		if (str[index - 1] == ' ' ||
+		    str[index - 1] == '\t' ||
+		    str[index - 1] == '\n' ||
+		    str[index - 1] == ',' ||
+		    str[index - 1] == ';' ||
+		    str[index - 1] == '.' ||
+		    str[index - 1] == '!' ||
+		    str[index - 1] == '?' ||
+		    str[index - 1] == '"' ||
+		    str[index - 1] == '(' ||
+		    str[index - 1] == ')' ||
+		    str[index - 1] == '{' ||
+		    str[index - 1] == '}' ||
+		    index == 0)
+			str[index] -= 32;
+
+		index++;
 	}
-	return (s);
+
+	return (str);
 }
