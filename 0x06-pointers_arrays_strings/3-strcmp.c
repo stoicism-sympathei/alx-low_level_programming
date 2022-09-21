@@ -8,6 +8,7 @@
  * return: return an integer less than, equalto, or greater than zero
  * if s1 is found, respectively, to be less than, to match, or be greater than s2
  */
+
 int _strcmp(char *s1, char *s2)
 {
 	int i = 0;
