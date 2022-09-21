@@ -8,10 +8,9 @@
  */
 char *leet(char *s)
 {
-	int 1 = 0, j;
+	int i = 0, j;
 	char letters[11] = "aeotlAEOTL";
-	char numbesr[6] = "43071";
-
+	char numbers[6] = "43071";
 
 	while (s[i])
 	{
