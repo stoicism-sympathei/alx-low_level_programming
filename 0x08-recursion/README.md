@@ -52,13 +52,13 @@ functions written in the project.
     * Otherwise, the function returns `0`.
 
 * **7. They say we only use a fraction of our brain's true potential. Now that's when we're awake. When we're asleep, we can do almost anything**
-  * [100-is_palindrome.c](./7-is_palindrome.c): C function that checks if a string is
+  * [100-is_palindrome.c](./100-is_palindrome.c): C function that checks if a string is
   a palindrome.
     * If the string is a palindrome, the function returns `1`.
     * Otherwise, the function returns `0`.
 
 * **8. Inception. Now, before you bother telling me it's impossible...**
-  * [101-wildcmp.c](./100-wildcmp.c): C function that compares two strings
+  * [101-wildcmp.c](./101-wildcmp.c): C function that compares two strings
   `s1` and `s2`.
     * `s2` can contain the special character `*`.
     * If the strings can be considered identical, the function returns `1`.
