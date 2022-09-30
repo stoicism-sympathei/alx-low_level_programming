@@ -3,8 +3,10 @@
 
 /**
  * main - entry point of the program
+ * @argc: length of argv table
+ * @argv: table containing program name and argments
  *
- * return: 0 if success, 1 if eeror
+ * Return: 0 if success, 1 if error
  */
 
 int main(int argc, char **argv)
