@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - print all argument that recived
+ * main - entry point of the program
+ * @argc: length of argv table
+ * @argv: table containing program name and argments
  *
- * Retrun: always 0 (Success)
+ * Return: always 0 (Success)
  */
 
 int main(int argc, char **argv)
@@ -11,6 +13,6 @@ int main(int argc, char **argv)
 	int i = 0;
 
 	while (i < argc)
-		printf("%s\n", argv[++]);
+		printf("%s\n", argv[i++]);
 	return (0);
 }
