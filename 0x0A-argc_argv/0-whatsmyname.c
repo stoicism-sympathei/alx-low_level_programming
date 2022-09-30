@@ -1,15 +1,18 @@
 #include <stdio.h>
 
+#include <stdio.h>
+
 /**
- * main - entry point of the program 
+ * main - entry point of the program
  * @argc: length of argv table
- * @argv: table containing program name and arguments
+ * @argv: table containing program name and argments
  *
- * return: always 0 (Success)
+ * Return: always 0 (Success)
  */
+
 int main(int argc, char **argv)
 {
 	(void)argc;
-	printf("%s\n", argv[0];
-	               return (0);
+	printf("%s\n", argv[0]);
+	return (0);
 }
