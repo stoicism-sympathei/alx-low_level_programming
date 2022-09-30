@@ -3,6 +3,8 @@
 
 /**
  * main - entry point of the program
+ * @argc: length of argv table
+ * @argv: table containing program name and argments
  *
  * Return: 0 if success, 1 if error
  */
