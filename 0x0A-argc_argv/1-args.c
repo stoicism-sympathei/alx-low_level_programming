@@ -1,12 +1,14 @@
 #include <stdio.h>
 
 /**
- * main - print number of argument
+ * main - entry point of the program
+ * @argc: length of argv table
+ * @argv: table containing program name and argments
  *
- * return: always 0 (Success)
+ * Return: always 0 (Success)
  */
 
-int main(int argc, char **argv)
+int		main(int argc, char **argv)
 {
 	(void)argv;
 	printf("%d\n", argc - 1);
