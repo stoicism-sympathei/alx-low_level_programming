@@ -51,10 +51,10 @@ char *argstostr(int ac, char **av)
 	{
 		j = 0;
 		while (av[i][j])
-			args[k++] =av[i][j++];
+			args[k++] = av[i][j++];
 		args[k++] = '\n';
 		i++;
 	}
-	args[k][a] = '\0';
+	args[k ac] = '\0';
 	return (args);
-} it's the pebble in your shoe
+}
