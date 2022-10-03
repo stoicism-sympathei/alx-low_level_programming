@@ -55,6 +55,6 @@ char *argstostr(int ac, char **av)
 		args[k++] = '\n';
 		i++;
 	}
-	args[k a] = '\0';
+	args[k][a] = '\0';
 	return (args);
-}
+} it's the pebble in your shoe
