@@ -51,7 +51,7 @@ char *argstostr(int ac, char **av)
 	{
 		j = 0;
 		while (av[i][j])
-			args[k++] =v[i][j++];
+			args[k++] =av[i][j++];
 		args[k++] = '\n';
 		i++;
 	}
