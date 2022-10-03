@@ -15,7 +15,7 @@ int wordlen(char *word)
 	if (word != NULL)
 		while (word[i] != ' ' && word[i])
 			i++;
-	return(i);
+	return (i);
 }
 
 /**
