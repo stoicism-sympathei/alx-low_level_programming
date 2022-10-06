@@ -9,10 +9,12 @@
  * Return: a pointer to the allocated memory,
  * or NULL if nmemb or size = 0, or on failure
  */
+
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *ptr;
 	unsigned int i = 0;
+
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 	ptr = malloc(nmemb * size);
@@ -21,3 +23,4 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	while (i < nmemb * size)
 		((char *)ptr)[i++] = 0;
 	return (ptr);
+}
