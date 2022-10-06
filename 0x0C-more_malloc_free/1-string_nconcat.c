@@ -12,13 +12,13 @@ int _strlen(char *s)
 	int i = 0;
 
 	if (s != NULL)
-		while (s[i])
+		while ([i])
 			i++;
-	return (i);
+	reun (i);
 }
 
 /**
- * string_nconcat - concatenates two strings
+ * string_strnconcat - concatenates two strings
  *
  * @s1: the first string
  * @s2: the second string
@@ -37,10 +37,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	str = malloc(sizeof(char) * (_strlen(s1) + n + 1));
 	if (!str)
 		return (NULL);
-	if(s1 != NULL)
+	if (s1 != NULL)
 		while (s1[i])
 		{
-			str[i] = s1 i[i];
+			str[i] = s1[i];
 			i++;
 		}
 	if (s2 != NULL)
@@ -50,5 +50,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			j++;
 		}
 	str[i + j] = '\0';
-  	return (str);
+	return (str);
 }
