@@ -19,8 +19,7 @@ int _strlen(char *s)
 
 /**
  * string_strnconcat - concatenates two strings
- *
- * @s1: the first string
+ *@s1: the first string
  * @s2: the second string
  * @n: the maximum size in bytes of s2 to be concatenated to s1
  *
