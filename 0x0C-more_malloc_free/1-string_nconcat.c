@@ -50,5 +50,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			j++;
 		}
 	str[i + j] = '\0';
-i	return (str);
+	return (str);
 }
