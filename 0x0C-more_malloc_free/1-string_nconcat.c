@@ -38,7 +38,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (!str)
 		return (NULL);
 	if(s1 != NULL)
-		whle (s1[i])
+		while (s1[i])
 		{
 			str[i] = s1 i[i];
 			i++;
