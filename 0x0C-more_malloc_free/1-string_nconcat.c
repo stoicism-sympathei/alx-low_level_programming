@@ -14,7 +14,7 @@ int _strlen(char *s)
 	if (s != NULL)
 		while ([i])
 			i++;
-	reun (i);
+	return (i);
 }
 
 /**
