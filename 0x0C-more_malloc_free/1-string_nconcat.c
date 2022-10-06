@@ -19,7 +19,7 @@ int _strlen(char *s)
 
 /**
  * string_strnconcat - concatenates two strings
- *@s1: the first string
+ * @s1: the first string
  * @s2: the second string
  * @n: the maximum size in bytes of s2 to be concatenated to s1
  *
@@ -31,9 +31,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *str;
 	unsigned int i = 0, j = 0;
 
-	if (n >= (unsigned int)_str(s2))
-		n = (unsigned int)_str(s2);
-	str = malloc(sizeof(char) * (_str(s1) + n + 1));
+
+	if (n >= (unsigned int)_strlen(s2))
+		n = (unsigned int)_strlen(s2);
+	str = malloc(sizeof(char) * (_strlen(s1) + n + 1));
 	if (!str)
 		return (NULL);
 	if (s1 != NULL)
