@@ -7,6 +7,7 @@
  *
  * Return: the length of a string
  */
+
 int _strlen(char *str)
 {
 	int i = 0;
@@ -15,6 +16,7 @@ int _strlen(char *str)
 		i++;
 	return (i);
 }
+
 /**
  * _strdup - allocates a new space in memory which contains
  * a copy of the string given as a parameter
@@ -23,6 +25,7 @@ int _strlen(char *str)
  *
  * Return: a pointer to the new string, or NULL if str = NULL or fail
  */
+
 char *_strdup(char *str)
 {
 	char *new_str;
@@ -41,6 +44,7 @@ char *_strdup(char *str)
 	new_str[i] = '\0';
 	return (new_str);
 }
+
 /**
  * new_dog - creates a new dog
  *
@@ -48,8 +52,9 @@ char *_strdup(char *str)
  * @age: the age of the new dog
  * @owner: the owner of the new dog
  *
- * Retrun: the newly created dog
+ * Return: the newly created dog
  */
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new;
@@ -70,7 +75,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		free(new->name);
 		free(new);
-		return (NULL)
+		return (NULL);
 	}
 
 	new->age = age;
