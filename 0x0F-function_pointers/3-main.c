@@ -31,6 +31,6 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(100);
 	}
-	printf(%d\n", op(atoi(argv[1]), atoi(argv[3])));
+	printf("%d\n", op(atoi(argv[1]), atoi(argv[3])));
 	return (0);
 }
