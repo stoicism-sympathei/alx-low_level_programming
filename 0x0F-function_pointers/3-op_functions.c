@@ -1,7 +1,7 @@
 #include "3-calc.h"
 
 /**
- * op_add - a = b
+ * op_add - a + b
  *
  * @a: the first int
  * @b: the second int
@@ -20,7 +20,7 @@ int op_add(int a, int b)
  * @a: the first int
  * @b: the second int
  *
- * Retrun: difference of a - b
+ * Return: difference of a - b
  */
 
 int op_sub(int a, int b)
@@ -34,7 +34,7 @@ int op_sub(int a, int b)
  * @a: the first int
  * @b: the second int
  *
- * Retrun: product of a * b
+ * Return: product of a * b
  */
 
 int op_mul(int a, int b)
@@ -43,10 +43,10 @@ int op_mul(int a, int b)
 }
 
 /**
- * op_div - a / b 
+ * op_div - a / b
  *
  * @a: the first int
- * @b the second int
+ * @b: the second int
  *
  * Return: division of a / b
  */
