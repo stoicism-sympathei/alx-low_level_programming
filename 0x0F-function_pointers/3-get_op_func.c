@@ -7,6 +7,7 @@
  *
  * Return: pointer to the correct function, or NULL if operator doesn't exist
  */
+
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
@@ -20,7 +21,6 @@ int (*get_op_func(char *s))(int, int)
 
 	int i = 0;
 
-	
 	while (ops[i].op != NULL)
 	{
 		if (s[0] == ops[i].op[0] && strlen(s) == 1)
@@ -28,4 +28,4 @@ int (*get_op_func(char *s))(int, int)
 		i++;
 	}
 	return (NULL);
-}	
+}
