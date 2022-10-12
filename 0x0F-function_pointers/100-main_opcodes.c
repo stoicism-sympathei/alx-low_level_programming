@@ -9,12 +9,12 @@
  * Return: 0 if success, 1 if argc != 2 or 2 if bytes_nb < 0
  */
 
-int main(int argc, char **agv)
+int main(int argc, char **argv)
 {
-	int(*f)(), i = 0;
+	int (*f)(), i = 0;
 	unsigned char *p;
 
- 	if (argc != 2)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		exit(1);
