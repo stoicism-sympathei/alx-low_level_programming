@@ -7,6 +7,7 @@
  * 
  * Return: the sum of all the parametrs, or 0 is n = 0
  */
+
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list	args;
