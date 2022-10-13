@@ -10,8 +10,8 @@
 /**
  * struct specs - structure of specifiers and their printf ones
  *
- * @aspec: given specifiers
- * @func: printf corresponding function
+ * @spec: given specifiers
+ * @func : printf corresponding function
  */
 
 typedef struct specs
