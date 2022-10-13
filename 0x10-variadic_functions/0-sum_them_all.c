@@ -4,8 +4,8 @@
  * sum_them_all - sums all the parameters of the function
  *
  * @n: the number of parameters
- * 
- * Return: the sum of all the parametrs, or 0 is n = 0
+ *
+ * Return: the sum of all the parameters, or 0 is n = 0
  */
 
 int sum_them_all(const unsigned int n, ...)
