@@ -7,7 +7,7 @@
 types and functions written for the project.
 
 | Type/File          | Definition/Prototype                                                                  
-|------ | ------------ | -------------------------------------------------------------------------------------- |
+|------ | -----------| -------------------------------------------------------------------------------------- |
 | `struct list_s`    | <ul><li>`char *str`</li><li>`unsigned int len`</li><li>`struct list_s *next`</li></ul> |
 | `typedef list_t`   | `struct list_s`                                                                        |
 | `0-print_list.c`   | `size_t print_list(const list_t *h);`                                                  |
