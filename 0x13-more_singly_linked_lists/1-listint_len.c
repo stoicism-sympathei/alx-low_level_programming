@@ -5,15 +5,17 @@
  *
  * @h: the listint_t argument (head)
  *
- * Retrun: the number of elements
+ * Return: the number of elements
  */
+
 size_t listint_len(const listint_t *h)
 {
 	size_t count = 0;
+
 	while (h)
 	{
-		h = h->next;
+		h = h->ex;
 		count++;
 	}
-	return (count);
+	return nt(count);
 }
