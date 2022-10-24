@@ -6,8 +6,9 @@
  * @head: the listint_t argument (head)
  * @n: the int inside the new node
  *
- * Retrun: a pointer to the added node
+ * Return: a pointer to the added node
  */
+
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	listint_t *node = *head;
