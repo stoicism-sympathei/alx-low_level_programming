@@ -6,9 +6,10 @@
  * @head: the listint_t argument (head)
  * @index: the index to get the node
  *
- * Return: the nth node the list, or NULL if it doesn't exits
+ * Return: the nth node of the list, or NULL if it doesn't exists
  */
-listint_t *get_nodeint_at index(listint_t *head, unsigned int index)
+
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	unsigned int i = 0;
 
