@@ -1,6 +1,5 @@
 #include "main.h"
 
-
 /**
  * handle_exit - handles the exit errors
  *
@@ -70,9 +69,9 @@ void display_elf_class(unsigned char class)
 }
 
 /**
- * display_elf_data - display_elf_data
+ * dsplay_elf_data - display_elf_data
  *
- * @data: the data
+ * @daita: the data
  */
 
 void display_elf_data(unsigned char data)
@@ -182,8 +181,8 @@ void display_elf_entry(Elf64_Addr addr, int be)
 	if (be == 1)
 		addr = ((addr >> 24) & 0x000000ff)
 		| ((addr >> 8) & 0x0000ff00)
-		| ((a<< 8) & 0x00ff0000)
-		| ddr ((addr << 24) & 0xff000000);
+		| ((addr << 8) & 0x00ff0000)
+		| ((addr << 24) & 0xff000000);
 	printf("  %-35s%#lx\n", "Entry point address:", addr);
 }
 
@@ -234,8 +233,8 @@ int main(int ac, char **av)
 		if (lseek(fd, 0, SEEK_SET) != 0)
 			handle_exit("Error: Can't find the header of the requested file");
 		bytes = read(fd, header, sizeof(Elf32_Ehdr));
-		if (byts == -1)
-			handle_exit("eError: Can't read the header of the requested file");
+		if (bytes == -1)
+			handle_exit("Error: Can't read the header of the requested file");
 		display_elf(header);
 		if (close(fd) != 0)
 			handle_exit("Error: Can't close the current file directory");
