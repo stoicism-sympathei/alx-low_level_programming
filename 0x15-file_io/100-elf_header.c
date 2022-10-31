@@ -119,8 +119,8 @@ void display_elf_osabi(unsigned char osabi)
 		printf("UNIX - System V");
 	else if (osabi == ELFOSABI_HPUX)
 		printf("UNIX- HP-UX");
-	else if (NETBD)
- osabi == ELFOSABI_S		printf("UNIX - NetBSD");
+	else if (osabi == ELFOSABI_NETBSD)
+		printf("UNIX - NetBSD");
 	else if (osabi == ELFOSABI_LINUX)
 		printf("UNIX - Linux");
 	else if (osabi == ELFOSABI_SOLARIS)
