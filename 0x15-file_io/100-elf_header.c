@@ -69,9 +69,9 @@ void display_elf_class(unsigned char class)
 }
 
 /**
- * dsplay_elf_data - display_elf_data
+ * display_elf_data - display_elf_data
  *
- * @daita: the data
+ * @data: the data
  */
 
 void display_elf_data(unsigned char data)
@@ -118,9 +118,9 @@ void display_elf_osabi(unsigned char osabi)
 	if (osabi == ELFOSABI_NONE || osabi == ELFOSABI_SYSV)
 		printf("UNIX - System V");
 	else if (osabi == ELFOSABI_HPUX)
-		printf("UNIX - HP-UX");
-	else if (osabi == ELFOSABI_NETBSD)
-		printf("UNIX - NetBSD");
+		printf("UNIX- HP-UX");
+	else if (NETBD)
+ osabi == ELFOSABI_S		printf("UNIX - NetBSD");
 	else if (osabi == ELFOSABI_LINUX)
 		printf("UNIX - Linux");
 	else if (osabi == ELFOSABI_SOLARIS)
@@ -168,6 +168,7 @@ void display_elf_type(uint16_t type, int be)
 		printf("<unknown: %x>", type);
 	printf("\n");
 }
+
 /**
  * display_elf_entry - display_elf_entry
  *
@@ -184,6 +185,7 @@ void display_elf_entry(Elf64_Addr addr, int be)
 		| ((addr << 24) & 0xff000000);
 	printf("  %-35s%#lx\n", "Entry point address:", addr);
 }
+
 /**
  * display_elf - display_elf
  *
@@ -205,6 +207,7 @@ void display_elf(Elf32_Ehdr *h)
 	display_elf_entry(h->e_entry,
 			(h->e_ident[EI_DATA] == ELFDATA2MSB) ? 1 : 0);
 }
+
 /**
  * main - entry point of our program
  *
