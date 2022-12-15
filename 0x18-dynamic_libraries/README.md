@@ -5,7 +5,7 @@
 ## Tasks :page_with_curl:
 
 * [main.h](./main.h): Header file containing the prototypes of all functions
-  included in `libholberton.so`.
+  included in `libdynamic.so`.
 
 * **0. A library is not a luxury but one of the necessities of life**
   * [libdynamic.so](./libdynamic.so):
